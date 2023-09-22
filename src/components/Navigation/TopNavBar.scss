@@ -1,0 +1,38 @@
+.top-nav-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 45px;
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 8px 8px;
+
+  .top-nav-img {
+    cursor: pointer;
+  }
+
+  .folder {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .top-nav-bar {
+    height: 55px;
+    margin-bottom: 2.5rem;
+
+    .top-nav-img {
+      width: 60px;
+    }
+   
+    .folder {
+      font-size: 1.8rem;
+    }
+  }
+}

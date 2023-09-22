@@ -1,0 +1,38 @@
+.traits-card-info {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 1rem;
+
+    li {
+      margin: 0.5rem 0;
+      font-size: 1.3rem;
+      line-height: 20px;
+    }
+  }
+
+  .description {
+    margin: 1.2rem 0;
+    font-size: 1.4rem;
+    line-height: 20px;
+    color: #2f2d2d;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .traits-card-info {
+    ul {
+      li {
+        font-size: 1.5rem;
+      }
+    }
+
+    .description {
+      font-size: 1.6rem;
+    }
+  }
+}

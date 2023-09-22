@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+
+.races-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.classes-wrapper, .home-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.classes-wrapper-margin {
+  margin-top: 65px;
+}
+
+.classes-wrapper.flex {
+  margin-top: 65px;
+}
+
+.img-wrapper {
+  padding: 0 1rem;
+}
+
+.home-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  .flex {
+    gap: 1.8rem;
+  }
+
+  .classes-wrapper.flex {
+    margin-top: 85px;
+  }
+
+  .classes-wrapper-margin {
+    margin-top: 85px;
+  }
+}
+
+@media screen and (min-width: 757px) {
+  .flex {
+    justify-content: initial;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+
+.vertical-split {
+  font-weight: 300;
+  padding: 0 0.5rem;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+
+.fixed-top-big-white-bg {
+  position: fixed;
+  top: 45px;
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  z-index: 20;
+}
+
+.fixed-top-small-white-bg {
+  position: fixed;
+  top: 45px;
+  background-color: #fff;
+  height: 50px;
+  width: 100%;
+  z-index: 20;
+}
+
+.logo-link {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .logo-link {
+    font-size: 2.5rem;
+  }
+}

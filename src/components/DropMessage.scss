@@ -1,0 +1,80 @@
+.drop-messages {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 100%;
+
+  &:last-child {
+    margin-bottom: 3rem;
+  }
+
+  .drop-message {
+    position: relative;
+    padding: 2rem 0 1rem;
+    border-top: 1px solid rgba(206, 206, 206, 0.5);
+    opacity: 0.8;
+    font-weight: 500;
+    
+
+    .drop-message-flex {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.6rem;
+      padding-bottom: 1rem;
+      cursor: pointer;
+    }
+
+    .accordion-collapse {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease, opacity 0.3s ease;
+
+      .message-description {
+        position: relative;
+        overflow: hidden;
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+
+      .message-description p:not(:last-of-type) {
+        padding-bottom: 1.5rem;
+      }
+    }
+
+    .accordion-collapse.active {
+      opacity: 1;
+      height: auto;
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+      width: 17px;
+      opacity: 0.5;
+      transition: transform 0.5s ease;
+    }
+  }
+
+  .drop-message:last-of-type {
+    margin-bottom: 60px;
+  }
+
+}
+
+@media screen and (min-width: 576px) {
+  .drop-messages {
+    .drop-message {
+      font-weight: 500;
+
+      .drop-message-flex {
+        font-size: 1.8rem;
+      }
+
+      .accordion-collapse {
+        .message-description {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.class-description {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #2F2D2D;
+
+  span {
+    color: rgba(47, 60, 126, 1);
+  }
+
+  .description-promo {
+    font-size: 1.2rem;
+    font-style: italic;
+    background-color: rgba(30, 93, 93, 0.1);
+    border: 1px solid rgba(30, 94, 94, 0.3);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1rem 0;
+  }
+
+  .subhead {
+    font-weight: 700;
+  }
+
+  .centered-big {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  p {
+    padding-bottom: 1.5rem;
+  }
+  
+  table {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  td:first-child, tr:first-child > td:last-child {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  td {
+    padding: 0.5rem;
+  }
+
+  tr:first-child {
+    background-color: rgba(47, 45, 45, 0.1);
+  }
+
+  tr  td:first-child {
+    width: 10%;
+  }
+}
+
+
+@media screen and (min-width: 576px) {
+  .class-description {
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    .description-promo {
+      font-size: 1.4rem;  
+    }
+  
+    .centered-big {
+      font-size: 2rem;
+    }
+  }
+}

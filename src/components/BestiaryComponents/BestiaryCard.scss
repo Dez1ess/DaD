@@ -1,0 +1,63 @@
+.bestiary-card {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  padding-left: 0;
+
+  .spell-level {
+    color: #1e5e5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+  }
+
+  .bestiary-card-info {
+    border-left: 1px solid rgba(30, 94, 94, 0.3);
+    padding-left: 1.2rem;
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    h3 {
+      margin-bottom: 0.6rem;
+      font-size: 1.35rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .bestiary-card {
+    .spell-level {
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    .bestiary-card-info {
+      p {
+        font-size: 1.4rem;
+      }
+
+      h3 {
+        font-size: 1.55rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .bestiary-card {
+    &:hover {
+      box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.3);
+    }
+
+  }
+}

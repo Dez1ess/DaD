@@ -1,0 +1,40 @@
+.overall-slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85dvh;
+
+  .img-wrapper {
+    .slider-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .slider {
+        width: 270px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: "576px") {
+  .overall-slider-wrapper {
+    .img-wrapper {
+      .slider-wrapper {
+        .slider {
+          width: 440px;
+  
+          img {
+            width: 440px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

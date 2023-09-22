@@ -1,0 +1,20 @@
+.details {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  font-size: 1.3rem;
+  color: #2F2D2D;
+  border-top: 1px solid rgba(206,206,206,0.5);
+
+  p {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .details {
+    font-size: 1.5rem;
+  }
+}

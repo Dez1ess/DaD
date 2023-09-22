@@ -1,0 +1,102 @@
+.ability-card {
+  display: block;
+  width: 45.5dvw;
+  height: 145px;
+  max-width: 237px;
+  position: relative;
+  padding: 1rem 1.2rem;
+  box-shadow: 1px 1px 6px rgba(47, 45, 45, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+
+  p {
+    color: #000000;
+    font-size: calc(1.2rem + 0.4dvw);
+    font-weight: 400;
+  }
+
+  p:first-of-type {
+    opacity: 0.5;
+    margin-bottom: 0.4rem;
+  }
+
+  .ab-name {
+    position: absolute;
+    left: 12px;
+    bottom: 10px;
+    width: 60%;
+  }
+
+  img {
+    position: absolute;
+    width: 70px;
+    right: 0;
+    top: 30%;
+    opacity: 0.1;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .ability-card {
+    height: 170px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .ability-card {
+    height: 190px;
+  }
+}
+
+@media screen and (min-width: 475px) {
+  .ability-card {
+    height: 210px;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .ability-card {
+    height: 215px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .ability-card {
+    height: 225px;
+
+    img {
+      width: 90px;
+      right: 15%;
+      top: 30%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ability-card {
+    &:hover {
+      animation: tilt-shaking 0.25s;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+  }
+}
+
+//animation
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
