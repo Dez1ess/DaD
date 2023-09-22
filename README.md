@@ -1,2 +1,2 @@
 **D&D**\
-**A card game website with a complex React Logic.**\
+**A card game website with a complex React Logic.**
